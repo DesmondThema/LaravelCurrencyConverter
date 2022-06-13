@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\CurrencyController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Auth::routes();
+Route::get('/', [CurrencyController::class, 'index'])->name('home');
+Route::post('/convert', [CurrencyController::class, 'convert']);
+Route::get('/history', [\App\Http\Controllers\HomeController::class, 'index']);
+
