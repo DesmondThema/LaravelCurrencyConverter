@@ -1,7 +1,7 @@
 
 # About Currency Converter
 
-Currency Converter is a basic online currency conversion powered by [Laravel](https://laravel.com/) at the back engine, [Laravel Blade](https://laravel.com/docs/9.x/blade) as the templating language and [TailwindCss](https://tailwindcss.com) for styling. 
+Currency Converter is a basic online currency conversion powered by [Laravel](https://laravel.com/) at the back engine, [Laravel Blade](https://laravel.com/docs/9.x/blade) as the templating language and [TailwindCss](https://tailwindcss.com) for styling. The application utilises [Laravel currency converter package](https://github.com/amrshawky/laravel-currency)
 
 ## Local Installation
 1. Clone this repo  
